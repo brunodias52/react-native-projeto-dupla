@@ -44,6 +44,10 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         alignItems: 'center',
        },
+    idadecontariner:{
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
     cargo: {
         fontSize: 15,
         fontWeight: '600',
@@ -62,7 +66,12 @@ const styles = StyleSheet.create({
     
 
     },
-    
+    separator: {
+        flexDirection: 'row',
+        marginLeft: 8,
+        marginRight: 8,
+        alignItems: 'center',
+    },   
 })
 
 export default styles;
