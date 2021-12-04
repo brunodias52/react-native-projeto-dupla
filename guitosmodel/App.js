@@ -1,18 +1,17 @@
 import React from 'react';
-import {View, Text} from "react-native";
-
+import Home from "../guitosmodel/src/Home/Home"
 import Profile from './src/pages/Profile/';
 
 const App = () => {
   
   return (
-      <View>
+      <>
+        <Home/>
         <Profile/>   
         
-      </View>
+      </>
   );
 };
-
 
 
 export default App;
