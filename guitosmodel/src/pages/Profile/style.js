@@ -13,7 +13,6 @@ const styles = StyleSheet.create({
         width: 120,
         height: 120,
         resizeMode: "cover",
-        backgroundColor: "orange",
         borderRadius: 90,
         borderColor: "#fff",
         borderWidth: 5,
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: "#838383",
         fontWeight: "bold",
-        paddingLeft: 10,
+        paddingLeft: 20,
     },
     actionButtons:{
         width: 125,
@@ -132,6 +131,7 @@ const styles = StyleSheet.create({
         width: 320,
         height: 80,
         alignSelf: "center",
+
         flexDirection: "row",
         borderWidth: 1,
         borderRadius: 10,
@@ -139,22 +139,27 @@ const styles = StyleSheet.create({
         elevation: 8,
     },
     store:{
-        resizeMode: "cover",
-        width: 100,
-        height: 80,
+        margin: '1%',
+        width: 95,
+        height: 75,
         borderRadius: 10,
+        borderWidth: 1,
+        borderColor: '#000',
     },
     cardText:{
         paddingTop: 10,
-        paddingLeft: 50,
+        paddingLeft: 40,
         fontSize: 20,
         fontWeight: "bold",
-        color: "#000"
+        color: "#000",
+        
+
     },
     cardYear:{
         paddingLeft: 90,
         fontSize: 15,
         fontWeight: "bold",
+        
     },
 
 

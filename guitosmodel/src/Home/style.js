@@ -16,10 +16,7 @@ const styles = StyleSheet.create({
     },
     imagem: {
         
-        marginTop: '1%',
-        marginEnd: '1%',
-        marginRight: '1%',
-        marginLeft: '1%',
+        margin: '1%',
         height: '95%',
         width: '30%',
         borderRadius: 10,

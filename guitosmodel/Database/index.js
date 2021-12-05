@@ -1,7 +1,8 @@
+
 export const database = [
 { 
     id: 1,
-    foto: 'https://e7.pngegg.com/pngimages/823/358/png-clipart-spider-man-spider-man.png', 
+    foto: 'https://i.imgur.com/gbm9gGR.png', 
     nome: 'Guilherme Dideco', 
     cargo: 'Modelo',
     idade: '19 anos',
@@ -14,7 +15,7 @@ export const database = [
 },
 { 
     id: 2, 
-    foto: 'https://cdn.acritica.net/img/pc/450/300/dn_arquivo/2021/03/neymar.png', 
+    foto: 'https://i.imgur.com/bDE9gSJ.png', 
     nome: 'Lucas Ferreira Seixas', 
     cargo: 'Dublê',
     idade: '26 anos',
@@ -26,7 +27,7 @@ export const database = [
 },
 {       
     id: 3, 
-    foto: 'https://cdn.acritica.net/img/pc/450/300/dn_arquivo/2021/03/neymar.png', 
+    foto: 'https://i.imgur.com/C9t0l2D.png', 
     nome: 'Luis Felipe Saldanha', 
     cargo: 'Ator',
     idade: '25 anos',
@@ -39,7 +40,7 @@ export const database = [
 },
 {   
     id: 4, 
-    foto: 'https://cdn.acritica.net/img/pc/450/300/dn_arquivo/2021/03/neymar.png', 
+    foto: 'https://i.imgur.com/co9KmHk.png', 
     nome: 'Igor Haubrich', 
     cargo: 'BodyBuilder',
     idade: '30 anos',
@@ -52,9 +53,9 @@ export const database = [
 },
 {   
     id: 5, 
-    foto: 'https://cdn.acritica.net/img/pc/450/300/dn_arquivo/2021/03/neymar.png', 
+    foto: 'https://i.imgur.com/RFRWJz3.jpg', 
     nome: 'Leandro Almeida', 
-    cargo: 'BodyBuilder',
+    cargo: 'Contador',
     idade: '55 anos',
     altura: '1,83',
     cidade: 'Petropolis',

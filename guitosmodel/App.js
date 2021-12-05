@@ -1,13 +1,16 @@
 import React from 'react';
-import Home from "../guitosmodel/src/Home/Home"
+import Home from './src/Home/Home';
 import Profile from './src/pages/Profile/';
+
 
 const App = () => {
   
   return (
       <>
-        {/* <Home/> */}
-        <Profile/>   
+       <Home/> 
+      {/*  <Profile/> */}
+     
+          
         
       </>
   );

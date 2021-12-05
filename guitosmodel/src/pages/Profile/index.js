@@ -1,32 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import {View, SafeAreaView, Text, Image, TouchableOpacity, ScrollView} from "react-native"
 import styles from "./style";
 import Icon from 'react-native-vector-icons/FontAwesome5';
 import Icon2 from 'react-native-vector-icons/MaterialCommunityIcons';
 import Icons from 'react-native-vector-icons/Entypo';
-
-
+import ItemSeparator from "../../components/ItemSeparator";
 
 
 function Profile(props) {
+   
+
     return(
-    <ScrollView>
+
+        <ScrollView>
         <>
-        
          <SafeAreaView style={styles.container}>
          
-             <Image style={styles.avatarDetails} source={require("./../../assets/img/avatar.png")}/>
+             <Image style={styles.avatarDetails} source={require("./../../assets/img/dideco.png")}/>
          </SafeAreaView>
-
+         
          <View>
-             <Text style={styles.nameTitle}>Nome</Text>
-             <Text style={styles.subtitle}>descrição</Text>
+             <Text style={styles.nameTitle}>Guilherme Dideco</Text>
+             <Text style={styles.subtitle}>Modelo</Text>
          </View>
-
+       
          <View style={styles.socialNumbers}>
+            <Text style={styles.numbersStyle}>8493</Text>
             <Text style={styles.numbersStyle}>999</Text>
-            <Text style={styles.numbersStyle}>999</Text>
-            <Text style={styles.numbersStyle}>999</Text>
+            <Text style={styles.numbersStyle}>120</Text>
          </View>
 
          <View style={styles.socialInfo}>
@@ -74,11 +75,11 @@ function Profile(props) {
                 <Text style={styles.subtitleCards}>Atualizado em: 03/12/2021</Text>
             </View>
         </View>
-
+       
         <View>
             <Text style={styles.titleExp}>Experiência Profissional:</Text>
         </View>
-
+       
         <View>
             <View style={styles.cardExp}>
                 <View>
@@ -89,13 +90,25 @@ function Profile(props) {
                     <Text style={styles.cardYear}>2019</Text>
                 </View>
             </View>
+            <ItemSeparator />
+            <View style={styles.cardExp}>
+                <View>
+                    <Image style={styles.store} source={{uri: 'http://www.rioconsult.net.br/wp-content/uploads/2016/05/logo-rioconsult.png'}}/>
+                </View>
+                <View>
+                    <Text style={styles.cardText}>Rio Consult</Text>
+                    <Text style={styles.cardYear}>2020</Text>
+                </View>
+            </View>
+            <ItemSeparator />
             
         </View>
-        
+    
         </>
     </ScrollView>
          
     )
+    
 }
 
 
