@@ -8,14 +8,17 @@ import Profile from './src/pages/Profile/';
 
 const Stack = createNativeStackNavigator();
 
+
 const App = () => {
-  
+
+
   return (
       <>
         <NavigationContainer>
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen name="Home" options={{ headerShown: false }} component={Home} />
             <Stack.Screen name="Profile" options={{ headerShown: false }} component={Profile} />
+            
           </Stack.Navigator>
        </NavigationContainer>
       </>

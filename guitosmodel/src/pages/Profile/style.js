@@ -35,14 +35,19 @@ const styles = StyleSheet.create({
         paddingTop: 18,
         flexDirection: "row",
         flex: 1,
-        justifyContent: "space-evenly"
+        justifyContent: 'space-around'
+
     },
     numbersStyle:{
+        textAlign: 'center',
+        alignItems: 'center',
         fontSize: 25,
         color: "#7D50FF",
         fontWeight: "bold",
     },
     textStyle:{
+        textAlign: 'center',
+        alignItems: 'center',
         fontSize: 15,
         color: "#838383",
         fontWeight: "bold",
@@ -139,15 +144,20 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         borderColor: '#000',
     },
+    card2: {
+        width: 200,
+        flexDirection: 'column',
+        alignItems: 'center',
+    },
     cardText:{
+        
         paddingTop: 10,
-        paddingLeft: 40,
-        fontSize: 20,
+        fontSize: 18,
         fontWeight: "bold",
         color: "#000",
     },
     cardYear:{
-        paddingLeft: 90,
+        alignItems: 'center',
         fontSize: 15,
         fontWeight: "bold",
     },

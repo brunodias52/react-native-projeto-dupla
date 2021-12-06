@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Text,
   View,
@@ -10,7 +11,10 @@ import {database} from '../../Database';
 import styles from './style';
 import ItemSeparator from '../components/ItemSeparator'; 
 
-const Home = ({ navigation }) => {
+
+
+const Home = (props) => {
+ 
   return (
     <>
 
@@ -36,7 +40,7 @@ const Home = ({ navigation }) => {
 
               <TouchableOpacity style={styles.button}
                 onPress={() =>
-                  navigation.navigate('Profile', { nome: 'Guilherme Dideco' })}>
+                  props.navigation.navigate('Profile', pessoa)}>
                     <Text>Perfil</Text>
               </TouchableOpacity>
 
