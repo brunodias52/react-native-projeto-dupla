@@ -10,15 +10,16 @@ import {database} from '../../Database';
 import styles from './style';
 import ItemSeparator from '../components/ItemSeparator'; 
 
-function Home() {
+const Home = ({ navigation }) => {
   return (
     <>
+
+    <ScrollView>
       <Image
         source={{uri: 'https://i.imgur.com/kQhPlFp.png'}}
         style={styles.imagemHeader}
       />
-      
-      <ScrollView>
+    
         {database.map(pessoa => (
           <View style={styles.container} key={pessoa.id}>
             <Image source={{uri: pessoa.foto}} style={styles.imagem} />
@@ -33,9 +34,12 @@ function Home() {
                </View>
               
 
-              <TouchableOpacity style={styles.button}>
-                <Text>Perfil</Text>
+              <TouchableOpacity style={styles.button}
+                onPress={() =>
+                  navigation.navigate('Profile', { nome: 'Guilherme Dideco' })}>
+                    <Text>Perfil</Text>
               </TouchableOpacity>
+
             </View>
           </View>
         ))}

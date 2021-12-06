@@ -11,7 +11,6 @@ export const database = [
     peso: '65kg',
     didecoPirulito: '2019',
     didecoConsult: '2020',
-    
 },
 { 
     id: 2, 
@@ -36,7 +35,6 @@ export const database = [
     peso: '70kg',
     luisImitose: '2017',
     luis2:'2022'
-    
 },
 {   
     id: 4, 
@@ -49,20 +47,18 @@ export const database = [
     peso: '90kg',
     igor1: '2018',
     igor2: '2021'
-
 },
 {   
     id: 5, 
     foto: 'https://i.imgur.com/RFRWJz3.jpg', 
     nome: 'Leandro Almeida', 
-    cargo: 'Contador',
+    cargo: 'Contador de Histórias',
     idade: '55 anos',
     altura: '1,83',
     cidade: 'Petropolis',
     peso: '90kg',
     leandro1: '2020',
     leandro2: '2021'
-
 },
 
 ];

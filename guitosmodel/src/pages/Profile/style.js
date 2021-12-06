@@ -7,7 +7,6 @@ const styles = StyleSheet.create({
         width: "100%",
         height: 150,
     },
-
     avatarDetails:{
         marginTop: 85,
         width: 120,
@@ -17,7 +16,6 @@ const styles = StyleSheet.create({
         borderColor: "#fff",
         borderWidth: 5,
     },
-
     nameTitle:{
         fontFamily: "Oswald",
         textAlign: "center",
@@ -33,26 +31,21 @@ const styles = StyleSheet.create({
         fontSize: 15,
         color: "#838383",
     },
-    socialNumbers:{
+    infoContainer:{
         paddingTop: 18,
         flexDirection: "row",
-        justifyContent: "space-evenly",
-    },
-    socialInfo:{
-        flexDirection: "row",
-        justifyContent: "space-evenly",
+        flex: 1,
+        justifyContent: "space-evenly"
     },
     numbersStyle:{
         fontSize: 25,
         color: "#7D50FF",
         fontWeight: "bold",
-        paddingRight: 10,
     },
     textStyle:{
         fontSize: 15,
         color: "#838383",
         fontWeight: "bold",
-        paddingLeft: 20,
     },
     actionButtons:{
         width: 125,
@@ -135,7 +128,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         borderWidth: 1,
         borderRadius: 10,
-        backgroundColor: "#E8E2C0",
+        backgroundColor: "#DDE297",
         elevation: 8,
     },
     store:{
@@ -152,19 +145,13 @@ const styles = StyleSheet.create({
         fontSize: 20,
         fontWeight: "bold",
         color: "#000",
-        
-
     },
     cardYear:{
         paddingLeft: 90,
         fontSize: 15,
         fontWeight: "bold",
-        
     },
-
-
 }
-
 );
 
 export default styles;

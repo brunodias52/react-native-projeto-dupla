@@ -12,35 +12,29 @@ const styles = StyleSheet.create({
         borderRadius: 10,
         borderWidth: 2,
         borderColor: '#000',
-        
     },
     imagem: {
-        
         margin: '1%',
         height: '95%',
         width: '30%',
         borderRadius: 10,
         borderWidth: 3,
         borderColor: '#2EC93D',
-        
     },
     imagemHeader: {
         height: 150,
     },
-   
     nome: {
         marginTop: 20,
         justifyContent: 'center',
         fontSize: 25,
-        fontWeight: '800',
-
-        
+        fontWeight: '800'
     },
     cargocontainer: {
         width: 250,
         flexDirection: 'column',
         alignItems: 'center',
-       },
+    },
     idadecontariner:{
         flexDirection: 'row',
         alignItems: 'center',
@@ -60,8 +54,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         borderWidth: 2,
         borderColor: '#000',
-    
-
     },
     separator: {
         flexDirection: 'row',
