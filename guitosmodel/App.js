@@ -18,7 +18,6 @@ const App = () => {
           <Stack.Navigator initialRouteName="Home">
             <Stack.Screen name="Home" options={{ headerShown: false }} component={Home} />
             <Stack.Screen name="Profile" options={{ headerShown: false }} component={Profile} />
-            
           </Stack.Navigator>
        </NavigationContainer>
       </>

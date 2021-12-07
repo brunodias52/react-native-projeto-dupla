@@ -1,5 +1,5 @@
 import React from "react";
-import {View, SafeAreaView, Text, Image, TouchableOpacity , ScrollView, PermissionsAndroid} from "react-native"
+import {View, SafeAreaView, Text, Image, TouchableOpacity , ScrollView, Alert} from "react-native"
 
 import styles from "./style";
 import ItemSeparator from "../../components/ItemSeparator";
@@ -10,6 +10,7 @@ import Icons from 'react-native-vector-icons/Entypo';
 const Profile = (props) => {
    
     return(
+
         <ScrollView>
         <>
 
@@ -21,63 +22,64 @@ const Profile = (props) => {
              <Image style={styles.avatarDetails} source={{uri: props.route.params?.foto}}/>
          </SafeAreaView>
          
-         
          <View>
              <Text style={styles.nameTitle}>{props.route.params?.nome}</Text>
              <Text style={styles.subtitle}>{props.route.params?.cargo}</Text>
          </View>
        
-
          <View style={styles.infoContainer}>
-            <View>
+            <View style={styles.infoBox}>
                 <Text style={styles.numbersStyle}>{props.route.params?.view}</Text>
                 <Text style={styles.textStyle}>Views</Text>
             </View>
             
-            <View>
+            <View style={[styles.infoBox, {borderLeftWidth: 1, borderRightWidth: 1, borderColor: "#DFD8C8"}]}>
                 <Text style={styles.numbersStyle}>{props.route.params?.seguidores}</Text>
                 <Text style={styles.textStyle}>Followers</Text>
             </View>
             
-            <View>
+            <View style={styles.infoBox}>
                 <Text style={styles.numbersStyle}>{props.route.params?.seguindo}</Text>
                 <Text style={styles.textStyle}>Following</Text>
             </View>
         </View>    
-         
 
-         <View style={styles.myButtons} >
-            <TouchableOpacity style={styles.actionButtons} title="Seguir">
-                 <Text style={styles.textButton}>Reportar</Text>
+        <View style={styles.myButtons} >
+
+            <TouchableOpacity style={styles.actionButtons}
+                onPress={() => Alert.alert("Reportar usuário", "Tem certeza que deseja reportar este usuário?", [
+                {text: "Sim", onPress: () => Alert.alert("Usuário reportado com sucesso!")},
+                {text: "Não", onPress: () => console.log("Não")},])}>
+                    <Text style={styles.textButton}>Reportar</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.actionButtons} title="Seguir">
-                 <Text style={styles.textButton}>Seguir</Text>
+                <Text style={styles.textButton}>Seguir</Text>
             </TouchableOpacity>
 
             <TouchableOpacity style={styles.actionButtons} title="Mensagem">
-                 <Text style={styles.textButton}>Mensagem</Text>
+                <Text style={styles.textButton}>Mensagem</Text>
             </TouchableOpacity>
-         </View>
+        </View>
 
         <View style={styles.miniCardContainer} >
             <View style={styles.cardPeso}>
             <Text style={{textAlign: "center", paddingTop: 4}}><Icon name="weight" size={30} color="#000" /></Text>
-                <Text style={styles.titleCards}>{props.route.params?.peso}</Text>
-                <Text style={styles.subtitleCards}>Atualizado em: 05/12/2021</Text>
+            <Text style={styles.titleCards}>{props.route.params?.peso}</Text>
+            <Text style={styles.subtitleCards}>Atualizado em: 05/12/2021</Text>
         </View>
 
             <View style={styles.cardIdade}>
-            <Text style={{textAlign: "center", paddingTop: 4}}><Icon name="user-clock" size={30} color="#000" /></Text>
-                 <Text style={styles.titleCards}>{props.route.params?.idade}</Text>
-                 <Text style={styles.subtitleCards}>Atualizado em: 05/12/2021</Text>
+                <Text style={{textAlign: "center", paddingTop: 4}}><Icon name="user-clock" size={30} color="#000" /></Text>
+                <Text style={styles.titleCards}>{props.route.params?.idade}</Text>
+                <Text style={styles.subtitleCards}>Atualizado em: 05/12/2021</Text>
             </View>
 
             <View style={styles.cardLoc}>
-            <Text style={{textAlign: "center", paddingTop: 4}}><Icons name="location" size={33} color="#000" /></Text>
+                <Text style={{textAlign: "center", paddingTop: 4}}><Icons name="location" size={33} color="#000" /></Text>
                 <Text style={styles.titleCards}>{props.route.params?.cidade}</Text>
-
             </View>
+
             <View style={styles.cardAltura}>
                 <Text style={{textAlign: "center", paddingTop: 3}}><Icon2 name="human-male-height" size={33} color="#000" /></Text>
                 <Text style={styles.titleCards}>{props.route.params?.altura}</Text>

@@ -35,8 +35,12 @@ const styles = StyleSheet.create({
         paddingTop: 18,
         flexDirection: "row",
         flex: 1,
-        justifyContent: 'space-around'
-
+        alignContent: "center",
+        alignSelf: "center",
+    },
+    infoBox:{
+        alignItems: "center",
+        flex: 1,
     },
     numbersStyle:{
         textAlign: 'center',
@@ -129,11 +133,10 @@ const styles = StyleSheet.create({
         width: 320,
         height: 80,
         alignSelf: "center",
-
         flexDirection: "row",
         borderWidth: 1,
         borderRadius: 10,
-        backgroundColor: "#DDE297",
+        backgroundColor: "#F4F5E8",
         elevation: 8,
     },
     store:{
@@ -150,7 +153,6 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     cardText:{
-        
         paddingTop: 10,
         fontSize: 18,
         fontWeight: "bold",

@@ -8,7 +8,7 @@ const styles = StyleSheet.create({
         height: 130,
         marginRight: '5%',
         marginLeft: '5%',
-        backgroundColor: '#fff',
+        backgroundColor: '#F4F5E8',
         borderRadius: 10,
         borderWidth: 2,
         borderColor: '#000',
@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
         borderColor: '#2EC93D',
     },
     imagemHeader: {
-        height: 150,
+        width: "100%",
+        height: 170,
     },
     nome: {
         marginTop: 20,

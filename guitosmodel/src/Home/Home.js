@@ -19,8 +19,8 @@ const Home = (props) => {
     <>
 
     <ScrollView>
-      <Image
-        source={{uri: 'https://i.imgur.com/kQhPlFp.png'}}
+    <Image 
+    source={require("../assets/img/logo.png")}
         style={styles.imagemHeader}
       />
     
